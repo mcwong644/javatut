@@ -4,5 +4,9 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "c:\\xampp\\htdocs\\javatut\\mariaDBconnect\\mariadb-java-client-3.3.3.jar"
+    ],
+    "cSpell.words": [
+        "jdbc",
+        "wongdb"
     ]
 }
