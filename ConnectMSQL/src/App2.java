@@ -1,11 +1,11 @@
 import java.sql.*;
-import java.sql.Connection;
-import java.sql.DriverManager;
 
+// https://youtu.be/_g8ljkh9JNY?si=mZnWBOQ1O8-kbge3
 public class App2 
 {
-    //static final String DB_URL="jdbc:mariadb://localhost:3306/wongdb";
-    static final String DB_URL="jdbc:mysql://localhost:3306/wongdb";
+    //modified to use mariadb instead of mysql
+    static final String DB_URL="jdbc:mariadb://localhost:3306/wongdb";
+    //static final String DB_URL="jdbc:mysql://localhost:3306/wongdb";
     static final String DB_USER="root";
     static final String DB_PASS="";
     static final String QUERY="select * from users";
@@ -26,9 +26,11 @@ public class App2
                 String email = rs.getString("email");
 
                 // Display values
-                System.out.println("Username: " + username);
-                System.out.println("Email: " + email);
+                System.out.println("Username: " + username + " "+"Email: " + email);
+                //System.out.println("Email: " + email);
             }
+            stmt.close();
+            conn.close();
         } catch(SQLException e) {
             e.printStackTrace();
         }
