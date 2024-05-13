@@ -1,4 +1,4 @@
-public class Demo30 {
+public class Demo29 {
     // This class appears to be demonstrating the usage of Enums in Java.
     // Based on the comments in the previous code snippets, we can infer the
     // following:
