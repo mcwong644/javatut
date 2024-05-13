@@ -1,5 +1,6 @@
 import java.sql.*;
 
+// start mariadb in xampp control panel
 // Command line
 // Cd C:\xampp\htdocs\javatut\JavaTelusko>
 // set classpath=C:\xampp\htdocs\javatut\mariaDBconnect\mariadb-java-client-3.3.3.jar;.
