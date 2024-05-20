@@ -20,7 +20,7 @@ public class Demo29 {
         System.out.println("=====ALL Statuses=========");
         Status[] statuses = Status.values();
         for (Status s : statuses) {
-            System.out.println(s + " " + (s.ordinal() + 1) + " " + s.name() + " " + s.toString());
+            System.out.println("status "+s + " ordinal: " + (s.ordinal() + 1) + " name: " + s.name() + " name as string: " + s.toString());
         }
         System.out.println("=====if else======");
         if (status == Status.INPROGRESS) {

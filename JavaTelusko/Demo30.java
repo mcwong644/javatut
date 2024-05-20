@@ -3,9 +3,9 @@ public class Demo30 {
         // Based on the previous code in Demo29.java, this class likely demonstrates
         // the usage of Enums in Java.
 
-        // Declare an enum called "Status" with the following values:
-        // PENDING, INPROGRESS, COMPLETED, FAILED
+        // laptop is an enum instance of Laptop
         Laptop laptop = Laptop.Macbook;
+        System.out.println("=====laptops.getClass().getSuperclass()=========");
         System.out.println(laptop.getClass().getSuperclass());
         System.out.println(laptop + ": " + laptop.getPrice());
         System.out.println("=====ALL Laptops=========");
