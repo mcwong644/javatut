@@ -9,13 +9,15 @@ import java.io.IOException;
 
 public class Na001 {
     public static void main(String[] args) {
-        copyFile();
+        String file = "C:\\StamfordDrivei5\\May 2024\\zLHDN BE2023_560406075551.pdf";
+        String opFile = "c:\\xampp\\htdocs\\javatut\\javatelusko\\sample.pdf";
+        copyFile(file, opFile);
         
     }
 
-    public static void copyFile() {    
-        File file = new File("C:\\StamfordDrivei5\\May 2024\\zLHDN BE2023_560406075551.pdf");
-        File opFile = new File("c:\\xampp\\htdocs\\javatut\\javatelusko\\sample.pdf");
+    public static void copyFile(String a, String b) {    
+        File file = new File(a);
+        File opFile = new File(b);
         
         FileInputStream fileInputStream = null;
         FileOutputStream fileOutputStream = null;
